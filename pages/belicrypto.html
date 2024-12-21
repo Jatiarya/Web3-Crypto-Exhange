@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-black">
@@ -69,12 +69,115 @@
     </header>
     <!-- Header Section end-->
     <!-- Hero section start -->
-    <div class="title h-[100px] flex items-center">
-      <h1 class="text-white font-bold text-[20px] mx-[250px]">Beli Langsung</h1>
+    <div
+      class="title h-[100px] lg:flex lg:items-center md:flex md:items-center"
+    >
+      <h1
+        class="text-white font-bold lg:text-[20px] md:text-[20px] lg:mx-[250px] md:mx-[250px]"
+      >
+        Beli Langsung
+      </h1>
     </div>
-    <div class="line w-[50px] bg-[#88c273] h-[3px] flex mx-[290px]"></div>
+    <div
+      class="line lg:w-[50px] md:w-[50px] bg-[#88c273] lg:h-[3px] md:h-[3px] lg:flex md:flex lg:mx-[290px] md:mx-[290px]"
+    ></div>
     <!-- Hero section end -->
-
+    <!-- Buy section start -->
+    <div class="container-buy lg:flex lg:justify-between lg:mt-[20px]">
+      <div
+        class="side-content-buy lg:mx-[150px] mt-[10%] lg:flex lg:flex-col gap-3"
+      >
+        <h1 class="text-white font-bold lg:text-[25px] md:text-[25px]">
+          Beli Langsung
+        </h1>
+        <p class="text-white lg:text-balance md:text-balance">
+          Beli crypto dan beberapa jenis cryptocurrency lainnya di ExchangeKu
+          dengan 10 jenis metode pembayaran, include dengan kartu kredit,
+          transfer bank, E-wallet dan lainya.
+        </p>
+        <p class="text-white">Menerima pembayaran via</p>
+        <div class="payment-methode flex">
+          <img
+            class="lg:w-[80px] lg:h-[50px] cursor-pointer"
+            src="/source/belicyptosource/Visa.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[80px] lg:h-[50px] cursor-pointer"
+            src="/source/belicyptosource/PayPal.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[80px] lg:h-[50px] cursor-pointer"
+            src="/source/belicyptosource/GooglePay.png"
+            alt=""
+          />
+          <img
+            class="lg:w-[80px] lg:h-[50px] cursor-pointer"
+            src="/source/belicyptosource/Mastercard.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="side-form-buy bg-white w-[500px] h-[500px] rounded-[20px] lg:mx-[150px]"
+      >
+        <h1 class="font-bold text-[30px] text-center">Beli</h1>
+        <div class="container-input p-5 flex flex-col gap-3">
+          <label for="submit" class="text-[13px]">Jumlah pembayaran:</label>
+          <input
+            class="bg-black/10 w-[350px] h-[35px] rounded-[5px]"
+            type="text"
+            name="text"
+            id=""
+            placeholder=""
+            place
+          />
+          <label for="submit" class="text-[13px]">Jumlah penerimaan:</label>
+          <input
+            class="bg-black/10 w-[350px] h-[35px] rounded-[5px]"
+            type="text"
+            name="text"
+            id=""
+            placeholder=""
+            place
+          />
+          <label for="submit" class="text-[13px]">Bayar dengan:</label>
+          <input
+            class="bg-black/10 w-[350px] h-[35px] rounded-[5px]"
+            type="text"
+            name="text"
+            id=""
+            placeholder=""
+          />
+        </div>
+        <span class="text-gray-500 text-center p-5 text-[12px]"
+          >Refrensi harga:</span
+        ><span class="text-center text-[12px]">1 USDT = 16.000 Rupiah</span>
+        <div class="button flex flex-col items-center mt-5">
+          <button
+            class="submit-buy w-[250px] h-[35px] rounded-full bg-black text-white font-bold text-[15px] hover:text-[#88c273]"
+          >
+            Beli USDT
+          </button>
+          <div class="bellow-button-container flex mt-2">
+            <img
+              class="object-contain px-2"
+              src="/source/belicyptosource/Fastforward Clock.png"
+              alt=""
+            /><a class="hover:underline text-[13px]" href="#"
+              >Pembelian ulang</a
+            >
+            <img
+              class="object-contain px-2"
+              src="/source/belicyptosource/Arrow 6.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buy section end -->
     <!-- Footer Section start -->
     <footer class="h-[300px]">
       <h1
