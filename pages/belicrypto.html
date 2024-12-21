@@ -143,19 +143,28 @@
             place
           />
           <label for="submit" class="text-[13px]">Bayar dengan:</label>
-          <input
+          <select
+            id="submit"
+            name="submit"
             class="bg-black/10 w-[350px] h-[35px] rounded-[5px]"
             type="text"
             name="text"
             id=""
             placeholder=""
-          />
+          >
+            <option value="">Mastercard</option>
+            <option value="">Visa</option>
+            <option value="">Bank Transfer</option>
+            <option value="">E-Wallet</option>
+          </select>
         </div>
         <span class="text-gray-500 text-center p-5 text-[12px]"
           >Refrensi harga:</span
         ><span class="text-center text-[12px]">1 USDT = 16.000 Rupiah</span>
         <div class="button flex flex-col items-center mt-5">
           <button
+            type="button"
+            action="submit"
             class="submit-buy w-[250px] h-[35px] rounded-full bg-black text-white font-bold text-[15px] hover:text-[#88c273]"
           >
             Beli USDT
