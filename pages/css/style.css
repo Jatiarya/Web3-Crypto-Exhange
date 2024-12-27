@@ -21,3 +21,6 @@ body {
   color: white;
   background-color: black;
 }
+#mobile-menu {
+  z-index: 20;
+}

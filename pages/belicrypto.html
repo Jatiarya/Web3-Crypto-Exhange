@@ -12,29 +12,48 @@
       href="/source/Header Image.png"
       type="image/x-icon"
     />
+    link
   </head>
   <body class="bg-black">
     <!-- Header Section start-->
     <header class="bg-black sticky top-0">
       <nav class="text-white mx-auto flex justify-between items-center py-6">
         <a
-          class="logo font-bold mx-auto text-[#88c273] text-[25px]"
-          href="/index.html"
+          class="logo font-bold mx-5 lg:mx-auto md:mx-auto text-[#88c273] text-[25px]"
+          href=""
           >ExchangeKu</a
         >
+        <div class="lg:hidden md:hidden mx-5">
+          <button id="hamburger" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
         <ul
-          class="nav-link hidden lg:flex md:flex lg:gap-[50px] md:gap-[20px] text-[15px]"
+          class="nav-link mx-auto  hidden lg:flex md:flex lg:gap-[50px] md:gap-[20px] text-[15px]"
         >
-          <li>
+        <li>
             <a
-              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              class="hover:text-[#88c273] text-white transition duration-300 ease-linear "
               href="/index.html"
               >Beranda</a
             >
           </li>
           <li>
             <a
-              class="hover:text-white transition duration-300 ease-linear text-[#88c273]"
+              class="hover:text-white text-[#88c273] transition duration-300 ease-linear"
               href="pages\belicrypto.html"
               >Beli Crypto</a
             >
@@ -67,20 +86,67 @@
               >Finance</a
             >
           </li>
+          <div class="button mx-auto">
+            <button
+              class="login rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
+            >
+              Masuk
+            </button>
+            <button
+              class="register rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
+            >
+              Daftar
+            </button>
         </ul>
-        <div class="button mx-auto">
-          <button
-            class="login rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
-          >
-            Masuk
-          </button>
-          <button
-            class="register rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
-          >
-            Daftar
+      </nav>
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-black transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div class="flex justify-between items-center p-5">
+
+          <button id="close-menu" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
           </button>
         </div>
-      </nav>
+        <ul class="flex flex-col items-start p-5 text-white gap-[10px]">
+          <li><a class="hover:text-[#88c273]" href="/index.html">Beranda</a></li>
+          <li><a class="hover:text-[#88c273]" href="pages/belicrypto.html">Beli Crypto</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Pasar</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Trade</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Earn</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Finance</a></li>
+          <li>
+            <div class="button flex">
+                <button
+                  class="login rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
+                >
+                  Masuk
+                </button>
+              </li>
+              <li>
+                <button
+                  class="register rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
+                >
+                  Daftar
+                </button>
+            </div>
+          </li>
+        </ul>
+      </div>
     </header>
     <!-- Header Section end-->
     <!-- Hero section start -->
@@ -730,6 +796,7 @@
       </div>
     </footer>
     <!-- Footer Section end -->
+    <script src="/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
       AOS.init();
     </script>
