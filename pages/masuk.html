@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/login.css" />
+    <title>Masuk</title>
+    <link
+      rel="shortcut icon"
+      href="/source/Header Image.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="bg-black">
+    <div
+      class="container mt-[50%] md:mt-[15%] lg:mt-[8%] bg-white w-[350px] h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] mx-auto rounded-[10px]"
+    >
+      <h1 class="text-black font-bold text-[20px] text-center py-5">Masuk</h1>
+      <div
+        class="input-container grid lg:mt-5 place-content-center gap-1 lg:gap-3 md:gap-3"
+      >
+        <label class="text-[12px] font-semibold" for=""
+          >Email/No.Handphone:</label
+        >
+        <input
+          class="bg-black/10 w-[310px] h-[35px] md:w-[350px] lg:w-[400px] rounded-[5px]"
+          type="text"
+          name="text"
+          id=""
+          placeholder=""
+          required=""
+        />
+        <label class="text-[12px] font-semibold" for="">Kata Sandi:</label>
+        <input
+          class="bg-black/10 w-[310px] h-[35px] md:w-[350px] lg:w-[400px] rounded-[5px]"
+          type="password"
+          name="text"
+          id=""
+          placeholder=""
+          required=""
+        />
+        <button
+          id="login"
+          type="submit"
+          class="bg-black hover:text-[#88c273] text-white font-bold text-[15px] w-[300px] h-[30px] lg:w-[350px] rounded-full mt-5 mx-auto"
+        >
+          Masuk
+        </button>
+        <span class="text-[10px] text-[#737373] text-center mt-2 md:mt-5"
+          >atau masuk dengan</span
+        >
+        <div
+          class="optional-login grid grid-cols-3 place-items-center gap-3 md:mt-3"
+        >
+          <a
+            href=""
+            class="icon flex items-center bg-[#D9D9D9] w-[100px] h-[30px] rounded-full"
+          >
+            <div class="flex mx-auto items-center gap-2">
+              <img
+                class="w-[18px] h-[18px]"
+                src="/source/Login-Register-Source/Social Icons.png"
+                alt=""
+              />
+              <span class="text-[10px] font-medium">Telegram</span>
+            </div>
+          </a>
+          <a
+            href=""
+            class="icon flex items-center bg-[#D9D9D9] w-[100px] h-[30px] rounded-full"
+          >
+            <div class="flex mx-auto items-center gap-2">
+              <img
+                class="w-[18px] h-[18px]"
+                src="/source/Login-Register-Source/Google.png"
+                alt=""
+              />
+              <span class="text-[10px] font-medium">Google</span>
+            </div>
+          </a>
+          <a
+            href=""
+            class="icon flex items-center bg-[#D9D9D9] w-[100px] h-[30px] rounded-full"
+          >
+            <div class="flex mx-auto items-center gap-2">
+              <img
+                class="w-[18px] h-[18px]"
+                src="/source/Login-Register-Source/Apple.png"
+                alt=""
+              />
+              <span class="text-[10px] font-medium">Apple</span>
+            </div>
+          </a>
+        </div>
+        <span class="text-[#737373] text-[10px] text-center md:mt-3"
+          >Belum memiliki akun?
+          <a class="underline hover:text-black" href="daftar.html"
+            >daftar</a
+          ></span
+        >
+      </div>
+    </div>
+    <script>
+      const login = document.getElementById("login");
+      login.addEventListener("click", function () {
+        window.location.href = "/index.html";
+      });
+    </script>
+  </body>
+</html>
