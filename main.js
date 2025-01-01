@@ -27,3 +27,18 @@ const jelajahi = document.getElementById("jelajahi");
 jelajahi.addEventListener("click", function () {
   window.location.href = "pages/belicrypto.html";
 });
+// Tombol beli dan jual
+const beli = document.getElementById("btn-buy");
+const jual = document.getElementById("btn-sell");
+
+beli.addEventListener("click", function () {
+  window.location.href = "pages/belicrypto.html";
+});
+jual.addEventListener("click", function () {
+  window.location.href = "pages/belicrypto.html";
+});
+// Tombol daftar sekarang
+const daftarSekarang = document.getElementById("register-now");
+daftarSekarang.addEventListener("click", function () {
+  window.location.href = "pages/daftar.html";
+});
