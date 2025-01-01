@@ -22,3 +22,8 @@ const register = document.getElementById("register");
 register.addEventListener("click", function () {
   window.location.href = "pages/daftar.html";
 });
+// Tombol jelajahi
+const jelajahi = document.getElementById("jelajahi");
+jelajahi.addEventListener("click", function () {
+  window.location.href = "pages/belicrypto.html";
+});
