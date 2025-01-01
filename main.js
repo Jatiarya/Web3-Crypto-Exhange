@@ -22,6 +22,16 @@ const register = document.getElementById("register");
 register.addEventListener("click", function () {
   window.location.href = "pages/daftar.html";
 });
+// Tombol login versi mobile
+const loginMobile = document.getElementById("register-mobile");
+loginMobile.addEventListener("click", function () {
+  window.location.href = "pages/masuk.html";
+});
+// Tombol daftar versi mobile
+const registerMobile = document.getElementById("register-mobile");
+registerMobile.addEventListener("click", function () {
+  window.location.href = "pages/daftar.html";
+});
 // Tombol jelajahi
 const jelajahi = document.getElementById("jelajahi");
 jelajahi.addEventListener("click", function () {
