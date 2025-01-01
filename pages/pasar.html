@@ -87,12 +87,12 @@
             >
           </li>
           <div class="button mx-auto">
-            <button id="login-mobile"
+            <button id="login"
               class="login rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
             >
               Masuk
             </button>
-            <button id="register-mobile"
+            <button id="register"
               class="register rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
             >
               Daftar
@@ -131,14 +131,14 @@
           <li><a class="hover:text-[#88c273]" href="#">Finance</a></li>
           <li>
             <div class="button flex">
-                <button id="login"
+                <button id="login-mobile"
                   class="login rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
                 >
                   Masuk
                 </button>
               </li>
               <li>
-                <button id="register"
+                <button id="register-mobile"
                   class="register rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
                 >
                   Daftar
@@ -262,313 +262,119 @@
     </section>
      <!-- Main section end  -->
       <!-- Market Section start -->
-      <!-- <section
-      class="market flex flex-col lg:flex lg:flex-col lg:text-[30px] md:flex md:flex-col"
-    >
-      <div
-        class="market-tittle-container mt-[100px] mx-auto lg:mx-auto md:mx-auto"
-      >
-        <span
-          class="text-white font-bold text-[25px] lg:text-[30px] md:text-[30px]"
-          >Pasar Crypto Hari Ini
-        </span>
-      </div>
-      <div
-        class="container-coin mt-[25px] w-[400px] mx-auto lg:w-[1100px] md:w-[600px] h-[750px] lg:mx-auto md:mx-auto rounded-[25px]"
-      >
-        <div class="coin-container mt-[10px] p-[25px]">
-          <div class="w-[5px] h-[30px] bg-[#88c273]">
-            <h1
-              class="coin-tittle text-white ml-[10px] text-[15px] lg:text-[20px] md:text-[20px] w-[143px] h-[38px] font-semibold"
-            >
-              Daftar Koin
-            </h1>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] lg:flex lg:mx-auto h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/bitcoin-btc-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    BTC
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[15px] md:text-[20px] font-normal"
-                  >
-                    Bitcoin
-                  </p>
+      <section class="mt-10">
+        <h1 class="text-white font-bold text-[20px] mx-5 lg:mx-[90px]">Pasar Crypto Hari Ini</h1>
+        <div class="container mt-5 mx-auto">
+          <div class="tittle mx-10 lg:mx-[90px] flex items-center gap-1">
+            <div class="h-[25px] w-[3px] bg-[#88c273]"></div>
+            <span class="text-white font-bold text-[15px]">Daftar Coin</span>
+          </div>
+          <div class="container-coin mt-5 flex flex-col gap-1">
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/bitcoin-btc-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">BTC</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Bitcoin</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $101,000.99
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +5.00%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$102.946,93</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+5.00%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/ethereum-eth-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    Eth
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-normal"
-                  >
-                    Ethereum
-                  </p>
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/ethereum-eth-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">ETH</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Ethereum</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $3,950.98
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +10.00%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$3.454,34</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+8.32%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/binance-coin-bnb-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    BNB
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-normal"
-                  >
-                    Binance Coin
-                  </p>
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/binance-coin-bnb-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">BNB</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Binance Coin</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $768.35
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +8.51%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$785.23</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+12.42%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/dogecoin-doge-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    DOGE
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-normal"
-                  >
-                    Doge Coin
-                  </p>
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/dogecoin-doge-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">DOGE</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Doge Coin</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $0.41999
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +55.21%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$0.4123</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+23.53%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/loopring-lrc-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    LRC
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-normal"
-                  >
-                    Loopering
-                  </p>
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/loopring-lrc-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">LRC</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Loopering</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $0.3199
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +56.12%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$0.342</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+15.23%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
-            <div
-              class="coin gap-[30px] mt-[10px] bg-white/5 w-[350px] lg:w-[1000px] md:w-[550px] h-[100px] flex justify-between rounded-[15px] cursor-pointer hover:bg-white/10 transition duration-300 ease-linear"
-            >
-              <div class="coin-logo flex p-[25px]">
-                <img
-                  class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px] md:w-[50px] md:h-[50px]"
-                  src="/source/filecoin-fil-logo.png"
-                  alt=""
-                />
-                <div class="coin-name ml-[10px]">
-                  <h1
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-semibold"
-                  >
-                    FIL
-                  </h1>
-                  <p
-                    class="text-white text-[12px] lg:text-[20px] md:text-[20px] font-normal"
-                  >
-                    File Coin
-                  </p>
+            <div class="card w-[350px] h-[100px] md:w-[700px] lg:w-[1000px] bg-white/5 hover:bg-white/10 cursor-pointer rounded-[10px] mx-auto flex justify-around lg:justify-between items-center">
+              <div class="coin flex gap-2 items-center lg:mx-10">
+                <img class="w-[35px] h-[35px] lg:w-[50px] lg:h-[50px]" src="/source/filecoin-fil-logo.png" alt="">
+                <div class="coin-name">
+                  <p class="text-white font-bold text-[13px] lg:text-[15px]">FIL</p>
+                  <p class="text-white text-[10px] lg:text-[13px]">Filecoin</p>
                 </div>
               </div>
-              <div class="coin-price mt-[30px]">
-                <h1
-                  class="text-white text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  $8.25
-                </h1>
-                <h1
-                  class="text-[#00FF2F] text-[12px] lg:text-[15px] md:text-[15px] font-bold"
-                >
-                  +34.24%
-                </h1>
+              <div class="price">
+                <p class="text-white font-semibold text-[13px] lg:text-[15px]">$6.23</p>
+                  <p class="text-[#00FF2F] text-[10px] lg:text-[13px]">+5.23%</p>
               </div>
-              <div class="action-button p-[25px]">
-                <button
-                  class="buy text-white bg-[#00FF2F] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Beli
-                </button>
-                <button
-                  class="sell text-white bg-[#FF0000] w-[60px] h-[20px] text-[15px] rounded-[5px]"
-                >
-                  Jual
-                </button>
+              <div class="action-button flex flex-col lg:flex-row gap-2 lg:mx-10">
+                <button id="btn-buy" class="text-white bg-[#00FF2F] hover:bg-[#1cae37] px-5 rounded-sm">Beli</button>
+                <button id="btn-sell" class="text-white bg-[#FF0000] hover:bg-[#871a1a] px-5 rounded-sm">Jual</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+      </section>
     <section class="mt-10">
       <h1 class="text-white font-bold text-[20px] mx-5 lg:mx-[90px]">Pasar Crypto Hari Ini</h1>
       <div class="container mt-5 mx-auto">
@@ -788,7 +594,7 @@
       </div>
     </footer>
     <!-- Footer Section end -->
-    <script src="/main.js"></script>
+    <script src="/pages/js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
       AOS.init();
     </script>

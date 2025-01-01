@@ -15,40 +15,30 @@ closeMenu.addEventListener("click", () => {
 // Tombol Login
 const login = document.getElementById("login");
 login.addEventListener("click", function () {
-  window.location.href = "pages/masuk.html";
+  window.location.href = "masuk.html";
 });
 // Tombol Daftar
 const register = document.getElementById("register");
 register.addEventListener("click", function () {
-  window.location.href = "pages/daftar.html";
+  window.location.href = "daftar.html";
 });
 // Tombol login versi mobile
 const loginMobile = document.getElementById("login-mobile");
 loginMobile.addEventListener("click", function () {
-  window.location.href = "pages/masuk.html";
+  window.location.href = "masuk.html";
 });
 // Tombol daftar versi mobile
 const registerMobile = document.getElementById("register-mobile");
 registerMobile.addEventListener("click", function () {
-  window.location.href = "pages/daftar.html";
-});
-// Tombol jelajahi
-const jelajahi = document.getElementById("jelajahi");
-jelajahi.addEventListener("click", function () {
-  window.location.href = "pages/belicrypto.html";
+  window.location.href = "daftar.html";
 });
 // Tombol beli dan jual
 const beli = document.getElementById("btn-buy");
 const jual = document.getElementById("btn-sell");
 
 beli.addEventListener("click", function () {
-  window.location.href = "pages/belicrypto.html";
+  window.location.href = "belicrypto.html";
 });
 jual.addEventListener("click", function () {
-  window.location.href = "pages/belicrypto.html";
-});
-// Tombol daftar sekarang
-const daftarSekarang = document.getElementById("register-now");
-daftarSekarang.addEventListener("click", function () {
-  window.location.href = "pages/daftar.html";
+  window.location.href = "belicrypto.html";
 });
