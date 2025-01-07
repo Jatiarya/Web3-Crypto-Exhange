@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>ExchangeKu</title>
+    <link
+      rel="shortcut icon"
+      href="/source/Header Image.png"
+      type="image/x-icon"
+    />
+    link
+  </head>
+  <body class="bg-black">
+    <!-- Header Section start-->
+    <header class="bg-black sticky top-0">
+      <nav class="text-white mx-auto flex justify-between items-center py-6">
+        <a
+          class="logo font-bold mx-5 lg:mx-auto md:mx-auto text-[#88c273] text-[25px]"
+          href=""
+          >ExchangeKu</a
+        >
+        <div class="lg:hidden md:hidden mx-5">
+          <button id="hamburger" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul
+          class="nav-link mx-auto  hidden lg:flex md:flex lg:gap-[50px] md:gap-[20px] text-[15px] items-center"
+        >
+        <li>
+            <a
+              class="hover:text-[#88c273] text-white transition duration-300 ease-linear "
+              href="/index.html"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-[#88c273] text-white transition duration-300 ease-linear"
+              href="belicrypto.html"
+              >Beli Crypto</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-[#88c273] text-white transition duration-300 ease-linear"
+              href="pasar.html"
+              >Pasar</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-white text-[#88c273] transition duration-300 ease-linear"
+              href=""
+              >Trade</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href=""
+              >Earn</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href=""
+              >Finance</a
+            >
+          </li>
+          <div class="button mx-auto">
+            <button id="login"
+              class="login rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
+            >
+              Masuk
+            </button>
+            <button id="register"
+              class="register rounded-full py-1 px-5 font-medium transition duration-300 ease-linear"
+            >
+              Daftar
+            </button>
+        </ul>
+      </nav>
+      <div
+        id="mobile-menu"
+        class="fixed top-0 right-0 w-64 h-full bg-black transform translate-x-full transition-transform duration-300 ease-in-out"
+      >
+        <div class="flex justify-between items-center p-5">
+
+          <button id="close-menu" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <ul class="flex flex-col items-start p-5 text-white gap-[10px] ">
+          <li><a class="hover:text-[#88c273]" href="/index.html">Beranda</a></li>
+          <li><a class="hover:text-[#88c273]" href="belicrypto.html">Beli Crypto</a></li>
+          <li><a class="hover:text-[#88c273]" href="pasar.html">Pasar</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Trade</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Earn</a></li>
+          <li><a class="hover:text-[#88c273]" href="#">Finance</a></li>
+          <li>
+            <div class="button flex">
+                <button id="login-mobile"
+                  class="login rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
+                >
+                  Masuk
+                </button>
+              </li>
+              <li>
+                <button id="register-mobile"
+                  class="register rounded-full w-[200px] py-1 px-5 font-medium transition duration-300 ease-linear"
+                >
+                  Daftar
+                </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- Header Section end-->
+    <!--Hero Section start  -->
+    <h1 class="text-white text-center font-bold text-9xl h-96">HALAMAN TRADE</h1>
+    <!-- Footer Section start -->
+    <footer class="h-[300px]">
+      <h1
+        class="logo text-[#88c273] font-bold text-[25px] mx-[30px] lg:mx-[180px] md:mx-[50px] mt-[50px]"
+      >
+        ExchangeKu
+      </h1>
+      <div
+        class="footer-container grid grid-cols-2 lg:grid lg:grid-cols-4 lg:place-items-center md:grid md:grid-cols-4 md:place-items-center mx-[30px] gap-[20px] lg:gap-0 md:gap-0 lg:mx-[120px] md:mx-[50px]"
+      >
+        <div class="address text-white">
+          <h1 class="font-bold">Alamat</h1>
+          <span
+            >Lenek, Lombok Timur, NTB <br />
+            82653</span
+          >
+        </div>
+        <div class="sosmed text-white">
+          <h1 class="font-bold">Social Media</h1>
+          <span
+            ><a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href="https://x.com/kjat04" target="_blank"
+              >Twitter</a
+            ><br /><a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href="https://www.instagram.com/jatiaryaa/" target="_blank"
+              >Instagram</a
+            >
+            <br />
+            <a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href="https://exchangeku.netlify.app/"
+              >ExchangeKu.com</a
+            ></span
+          >
+        </div>
+        <div class="download-app text-white">
+          <h1 class="font-bold">Unduh Aplikasi</h1>
+          <span
+            ><a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href=""
+              >Unduh untuk Android</a
+            >
+            <br />
+            <a
+              class="hover:text-[#88c273] transition duration-300 ease-linear"
+              href=""
+              >Unduh untuk Ios</a
+            ></span
+          >
+        </div>
+        <div class="community text-white">
+          <h1 class="font-bold">Komunitas</h1>
+          <div
+            class="community-card bg-white/10 w-[150px] h-[70px] rounded-[10px] grid grid-cols-4 place-items-center mt-[10px]"
+          >
+            <a href="">
+              <img src="/source/x.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/source/youtube.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/source/telegram.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/source/discord.png" alt="" />
+            </a>
+            <a href="https://www.linkedin.com/in/jati-arya-sujiwa-05b497259/"  target="_blank">
+              <img src="/source/linkedin.png" alt="" />
+            </a>
+            <a href="https://www.instagram.com/jatiaryaa/" target="_blank">
+              <img src="/source/instagram.png" alt="" />
+            </a>
+            <a href="https://www.tiktok.com/@jatiarya04" target="_blank">
+              <img src="/source/tiktok.png" alt="" />
+            </a>
+            <a href="">
+              <img src="/source/Social Icons.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="line h-[1px] bg-white/50 mt-[50px]"></div>
+      <div
+        class="credit text-white text-[12px] flex flex-col mt-3 lg:flex lg:flex-row lg:justify-between lg:mt-[50px] md:flex md:flex-row md:justify-between md:mt-[50px]"
+      >
+        <span class="mx-auto"
+          >Copyright 2024 - 2025
+          <span class="text-[#88c273] font-semibold text-[12px]"
+            ><a href="#https://exchangeku.netlify.app/"
+              >ExchangeKu.com
+            </a></span
+          >All Rights Reserved.</span
+        >
+        <span class="mx-auto"
+          >Dibuat oleh
+          <a class="font-semibold text-[#88c273] text-[12px]" href="https://www.instagram.com/jatiaryaa/" target="_blank"
+            >Jatiarya</a
+          ></span
+        >
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+    <script src="/pages/js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js">
+      AOS.init();
+    </script>
+  </body>
+</html>
