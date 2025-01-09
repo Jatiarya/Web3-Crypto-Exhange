@@ -60,4 +60,17 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
-/* Card Decoration CSS */
+@keyframes bounch {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bounch {
+  animation: bounch 2s infinite;
+}
