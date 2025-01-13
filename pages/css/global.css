@@ -8,6 +8,9 @@
 body {
   font-family: "Poppins";
 }
+.login:hover {
+  background-color: #88c273;
+}
 .apiDoc {
   background-color: black;
   color: white;
