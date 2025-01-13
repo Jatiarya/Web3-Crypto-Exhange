@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/pages/css/global.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>ExchangeKu</title>
     <link
@@ -143,7 +143,134 @@
     </header>
     <!-- Header Section end-->
     <!--Hero Section start  -->
-    <h1 class="text-white text-center font-bold text-9xl h-96">HALAMAN TRADE</h1>
+    <main class="bg-white/5 flex justify-around items-center h-[320px]">
+      <div class="side-content grid gap-3">
+        <h1 class="text-white font-bold text-[30px]">ExchangeKu API</h1>
+        <h2 class="text-[#737373] font-semibold">Trading jadi lebih mudah</h2>
+        <div class="buttons">
+          <button class="apiKey bg-[#88c273] w-[150px] h-[50px] font-semibold text-[13px] rounded-[50px]">Buat Kunci API</button>
+          <button
+          class="apiDoc text-white w-[150px] h-[50px] font-semibold text-[13px]  rounded-[50px] transition duration-300 ease-linear"
+        >
+         API Dokumentasi
+        </button>
+        </div>
+      </div>
+      <div class="side-image">
+        <img class="w-[500px] h-[250px]" src="/source/source-trade/bannerDark.png" alt="">
+      </div>
+    </main>
+    <!-- Hero Section end -->
+    <!-- Quality Section start -->
+    <section class="quality mt-[100px]">
+      <h1 class="text-white font-bold text-[30px] text-center">Kualitas API Trading</h1>
+      <p class="text-[#737373]  font-medium text-[13px] w-[850px] mx-auto text-center">Kami menyediakan layanan API untuk perdangan spot, margin, dan futures untuk lebih dari 600 mata uang digital dan fiat. Dokumentasi API lengkap, dan lingkungan pengujian dalam 5+ bahasa.</p>
+      <div class="card-container flex justify-center gap-[25px] mt-[50px]">
+        <div class="card grid gap-5 w-[350px] h-[230px] rounded-[10px] hover:bg-white/5 cursor-pointer">
+          <div class="card-title flex items-center gap-2 mx-auto">  
+            <img src="/source/source-trade/tradingDark.png" alt="">
+            <span class="text-white font-bold text-[15px]">API Trading</span>
+          </div>
+          <p class="text-white w-[250px] text-center mx-auto">API Trading yang berkualitas, modern dan canggih</p>
+        </div>
+        <div class="card grid gap-5 w-[350px] h-[230px] rounded-[10px] hover:bg-white/5 cursor-pointer">
+          <div class="card-title flex items-center gap-2 mx-auto">  
+            <img src="/source/source-trade/dataDark.png" alt="">
+            <span class="text-white font-bold text-[15px]">Data API</span>
+          </div>
+          <p class="text-white w-[250px] text-center mx-auto">Data yang selalu up-to-date, menjamin pengalaman trading Anda sempurna.</p>
+        </div>
+        <div class="card grid gap-5 w-[350px] h-[230px] rounded-[10px] hover:bg-white/5 cursor-pointer">
+          <div class="card-title flex items-center gap-2 mx-auto">  
+            <img src="/source/source-trade/servicesDark.png" alt="">
+            <span class="text-white font-bold text-[15px]">Layanan</span>
+          </div>
+          <p class="text-white w-[250px] text-center mx-auto">Pelayanan yang sangat cepat dan tepat.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Quality Section end -->
+    <!-- User Benefit Section start -->
+    <section class="user-benefit mt-[100px]">
+      <h1 class="text-white font-bold text-[30px] text-center">Memenuhi Berbagai Kebutuhan Pengguna</h1>
+      <div class="card-container flex justify-center gap-[25px] mt-[50px]">
+        <div class="card grid w-[350px] h-[350px] rounded-[10px] hover:bg-white/5">
+          <div class="card-title mx-auto">  
+            <img class="mx-auto p-3" src="/source/source-trade/MarketMakerDark.png" alt="">
+            <span class="text-white font-bold text-[20px]">Market Makers</span>
+          </div>
+          <p class="text-white w-[326px]  text-center text-[15px] mx-auto">Bergabunglah dengan proyek ExchangeKu API Broker dan dapat komisi hingga 50%.</p>
+          <div class="text-link flex">
+            <a href="/pages/daftar.html" class="text-[#88C273] hover:text-white text-center text-[15px] mx-auto">Daftar Sekarang 
+            </a>
+          </div>
+        </div>
+        <div class="card grid w-[350px] h-[350px] rounded-[10px] hover:bg-white/5">
+          <div class="card-title mx-auto">  
+            <img class="mx-auto p-3" src="/source/source-trade/APIBrokerDark.png" alt="">
+            <span class="text-white font-bold text-[20px]">API Broker</span>
+          </div>
+          <p class="text-white w-[326px]  text-center text-[15px] mx-auto">Bergabunglah dengan proyek ExchangeKu API Broker dan dapat komisi hingga 50%.</p>
+          <div class="text-link flex">
+            <a href="" class="text-[#88C273]  hover:text-white text-center text-[15px] mx-auto">Selengkapnya
+            </a>
+          </div>
+        </div>
+        <div class="card grid w-[350px] h-[350px] rounded-[10px] hover:bg-white/5">
+          <div class="card-title mx-auto">  
+            <img class="mx-auto p-3" src="/source/source-trade/VIPDark.png" alt="">
+            <span class="text-white font-bold text-[20px]">VIP dan Institusi</span>
+          </div>
+          <p class="text-white w-[326px]  text-center text-[15px] mx-auto">Ajukan permohonan untuk menjadi VIP/institusi KuCoin dan nikmati diskon biaya istimewa, manajer akun pribadi, dan layanan dukungan teknis.</p>
+          <div class="text-link flex">
+            <a href="" class="text-[#88C273]  hover:text-white text-center text-[15px] mx-auto">Selengkapnya 
+            </a>
+          </div>
+        </div>       
+     </div>
+    </section>
+    <!-- User Benefit Section end -->
+    <!-- API User Benefit Section start  -->
+    <section class="API-userbenefit bg-white/10 mt-[100px]">
+      <h1 class="text-white font-bold text-[30px] text-center py-5">API Keuntungan Pengguna</h1>
+      <div class="container grid grid-cols-2 place-items-center text-balance gap-7 p-10">
+        <div class="desc w-[500px]">
+          <h1 class="text-white font-bold text-[20px]">Diskon Biaya</h1>
+          <p class="text-[#737373] font-semibold text-[15px]">Pengguna API bisa mendapatkan masa uji coba berbiaya rendah.</p>
+        </div>
+        <div class="desc w-[500px]">
+          <h1 class="text-white font-bold text-[20px]">Pinjaman Tanpa Bunga</h1>
+          <p class="text-[#737373] font-semibold text-[15px] ]">Perdagangan margin eksklusif untuk trader quant, bersama dengan pinjaman bebas bunga.</p>
+        </div>
+        <div class="desc w-[500px]">
+          <h1 class="text-white font-bold text-[20px]">Komisi Referal</h1>
+          <p class="text-[#737373] font-semibold text-[15px] ">Dapatkan komisi berdasarkan volume trading, bahkan saat membayar trading biaya 0%. Hubungi manajer akun Anda untuk mengetahui strategi referal yang disesuaikan.</p>
+        </div>
+        <div class="desc w-[500px]">
+          <h1 class="text-white font-bold text-[20px]">Strategi Perdaganan Kuantitatif</h1>
+          <p class="text-[#737373] font-semibold text-[15px]">Kami telah meluncurkan ExchangKu Academy bersama dengan institusi besar lainnya, yang akan terus di perbarui dengan strategi trading kuantitatif sumber terbuka. Saat ini, total 11 strategi trading telah tersedia secara terbuka.</p>
+        </div>
+      </div>
+    </section>
+    <!-- API User Benefit Section end  -->
+     <!-- Contact section start -->
+    <section class="contact mt-[100px]">
+    <h1 class="text-white font-bold text-[30px] text-center">Kontak</h1>
+    <div class="card-banner bg-[#88C273] h-[350px] flex justify-around items-center mt-5">
+    <div class="side-contact grid gap-2">
+      <h1 class="text-white font-bold text-[25px]">Kontak Kami</h1>
+      <p class="text-white text-[15px] w-[490px]">Jika Anda Mengalami masalah dalam transaksi API atau memiliki saran, hubungki kami melalui salah satu saluran berikut.</p>
+      <div class="icon-container flex gap-3">
+      <img class="w-[20px]" src="/source/telegram.png" alt="">
+      <img class="w-[20px]" src="/source/discord.png" alt="">
+      </div>
+    </div>
+    <div class="side-banner">
+    <img class="w-[500px]" src="/source/source-trade/contractUsDark.png" alt="">
+    </div>
+    </div>
+    </section>
+     <!-- Contact section end -->
     <!-- Footer Section start -->
     <footer class="h-[300px]">
       <h1
