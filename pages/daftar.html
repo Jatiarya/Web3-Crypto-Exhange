@@ -13,7 +13,9 @@
     />
   </head>
   <body class="bg-black">
-    <div
+    <form
+      action=""
+      method="post"
       class="container mt-[50%] md:mt-[15%] lg:mt-[8%] bg-white w-[350px] h-[350px] md:w-[450px] md:h-[450px] lg:w-[500px] lg:h-[500px] mx-auto rounded-[10px]"
     >
       <h1 class="text-black font-bold text-[20px] text-center py-5">
@@ -28,6 +30,15 @@
         <input
           class="bg-black/10 w-[310px] h-[35px] md:w-[350px] lg:w-[400px] rounded-[5px]"
           type="text"
+          name="text"
+          id=""
+          placeholder=""
+          required=""
+        />
+        <label class="text-[12px] font-semibold" for="">Kata Sandi:</label>
+        <input
+          class="password bg-black/10 w-[310px] h-[35px] md:w-[350px] lg:w-[400px] rounded-[5px]"
+          type="password"
           name="text"
           id=""
           placeholder=""
@@ -124,11 +135,12 @@
           ></span
         >
       </div>
-    </div>
+    </form>
     <script>
       const register = document.getElementById("register");
-      register.addEventListener("click", function () {
-        window.location.href = "/index.html";
+      register.addEventListener("click", () => {
+        alert("Registrasi Berhasil");
+        window.location.href = "masuk.html";
       });
     </script>
   </body>
